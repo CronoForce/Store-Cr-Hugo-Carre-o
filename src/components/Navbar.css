@@ -1,0 +1,40 @@
+.NavbarItems{
+    background: #3498db ;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    overflow: hidden;
+    border-bottom: 7px solid #2c3e50;
+}
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.fa-react{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+}
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-content: end;
+    margin-right: 2rem;
+}
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 30px 1rem;
+    transition: all 0.2s ease-out;
+    box-sizing: border-box;
+}
+.nav-links:hover{
+    background: #2c3e50;
+    border: 2px solid #fff;
+}
