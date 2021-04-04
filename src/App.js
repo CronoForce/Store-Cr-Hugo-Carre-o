@@ -1,11 +1,13 @@
 import React from 'react';
-import Navbar from "./components/NavBar";
+import Navbar from "./components/NavBar/NavBar";
 import './App.css';
+import Saludo from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Navbar />
+      <Saludo usuario="Hugo"/>
     </div>
   );
 }
