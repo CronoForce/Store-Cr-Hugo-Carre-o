@@ -1,3 +1,25 @@
+.Car{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.Car .circel-num{
+    background-color: #2980b9;
+    position: absolute;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    left: 30px;
+}
+.Car .circel-num .num-float{
+    position: absolute;
+    top: -24px;
+    left: 6px;
+    font-size: .7rem;
+    font-weight: 600;
+}
+
 .Car i{
     color: #fff;
     font-size: 2rem;
