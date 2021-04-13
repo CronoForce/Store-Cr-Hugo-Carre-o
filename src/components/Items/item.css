@@ -1,0 +1,23 @@
+.container-item{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #95a5a6;
+}
+.container-item__greeting{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ecf0f1;
+    box-shadow: 5px 5px 9px #2c3e50;
+}
+.container-item__greeting img{
+    width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
