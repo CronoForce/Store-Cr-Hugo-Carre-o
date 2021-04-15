@@ -36,3 +36,9 @@
     font-size: 1rem;
     text-align: center;
 }
+.ItmeListContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: center;
+    align-items: center;
+}

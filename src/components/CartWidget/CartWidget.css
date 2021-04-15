@@ -11,6 +11,8 @@
     height: 15px;
     top: 10px;
     left: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .Car .circel-num .num-float{
     position: absolute;
