@@ -1,21 +1,32 @@
-import React from "react";
+import React, { useState, Fragment } from "react";
 import "./ItemCount.css";
 
 function ItemCount() {
-    return (
+  const [numero, setNumero] = useState(0);
+
+  const add = () => {
+    setNumero(numero + 1);
+  };
+  const less = () => {
+    setNumero(numero - 1);
+  };
+
+  return (
     <div className="itemCount">
       <div className="itemCount-Container">
-        <a className="btn-car-add">
+        <button onClick={add} className="btn-car-add">
           +
-        </a>
+        </button>
         <p className="car-cant" id="car-cant">
-          0
+          {numero}
         </p>
-        <a className="btn-car-less">-</a>
+        <button onClick={less} className="btn-car-less">
+          -
+        </button>
       </div>
-      <a href="" className="btn-add-car">
+      <button href="" className="btn-add-car">
         Añadir al carrito
-      </a>
+      </button>
     </div>
   );
 }
