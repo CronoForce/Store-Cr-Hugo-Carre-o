@@ -37,8 +37,8 @@
     text-align: center;
 }
 .ItmeListContainer{
-    display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

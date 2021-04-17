@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "./ItmeListContainer.css";
 import ItemList from "../ItemList/ItemList";
+import { render } from "@testing-library/react";
 
 const ItmeListContainer = () => {
 
@@ -14,14 +15,15 @@ const ItmeListContainer = () => {
     }, [])
 
     const obtenerUser = async () => {
-        const data = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await fetch('https://fakestoreapi.com/products/category/women%20clothing');
         const users = await data.json()
-        console.log(users)
         setUser(users)
     }
 
     return(
+
         <ItemList data={user} />
+        
     )
 
 }

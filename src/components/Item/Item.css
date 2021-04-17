@@ -1,0 +1,146 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: #bdc3c7 0px 7px 29px 0px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+.item:hover{
+    box-shadow: #2ecc71 0px 7px 29px 0px;
+}
+.item-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item-content-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.item-content-img img{
+    width: 50%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.item-content-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.item-content-text span{
+    font-size: 1.2rem;
+    text-align: left;
+    color: #2c3e50;
+}
+.item-content-text a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid #27ae60;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    transition: all .3s ease;
+}
+.item-content-text a:hover{
+    background-color: #39cf77;
+}
+.precio-item{
+    color: #27ae60;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.comprar-item{
+    display: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+.item-content-text a:hover .comprar-item{
+    display: block;
+}
+.item-content-text a:hover .precio-item{
+    display: none;
+}
+.item-content-text span{
+    text-align: center;
+    font-weight: 500;
+}
+.description-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.item-img{
+    width: 50%;
+}
+.item-img img{
+    width: 150%;
+}
+.description-item .item-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.description-item .item-text span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+.description-item .item-text span:first-child{
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.description-item .item-text span:nth-child(2){
+    font-size: 2rem;
+    color: #27ae60;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.description-item .fa-truck{
+    color: #2c3e50;
+}
+.description-item .btn-buy{
+    outline: none;
+    background: none;
+    border: 3px solid #39cf77;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #2ecc71;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.description-item .btn-buy:hover{
+    background: #2ecc71;
+    color: #fff;
+    border: 3px solid #219752;
+}
+.description-item .btn-buy:active{
+    transform: scale(.8);
+}
