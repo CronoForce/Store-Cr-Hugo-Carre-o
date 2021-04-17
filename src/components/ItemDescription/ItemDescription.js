@@ -15,6 +15,7 @@ class ItemDescription extends Component {
                             <button className="btn-close" onClick={toggle}><i class="fas fa-times"></i></button>
                             <div>{children}</div>
                         </div>
+                        <div className="portal-background" onClick={toggle}></div>
                     </div>
                 )}
             </Portal>
