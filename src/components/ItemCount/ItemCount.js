@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import "./ItemCount.css";
 
 function ItemCount() {
-  const [numero, setNumero] = useState(0);
+  const [numero, setNumero] = useState(1);
 
   const add = () => {
     setNumero(numero + 1);
   };
   const less = () => {
-    setNumero(numero - 1);
+
+    if(numero === 1){
+      setNumero(numero);
+    }else{
+      setNumero(numero - 1);
+    }
+
+    
   };
 
   return (

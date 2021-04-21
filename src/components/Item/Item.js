@@ -3,7 +3,7 @@ import "./Item.css";
 import ItemCount from '../ItemCount/ItemCount';
 import ItemDescription from '../ItemDescription/ItemDescription';
 
-const Item = ({ title, price, img }) => {
+const Item = ({ title, price, img, description}) => {
 
   const [active, setAtive] = useState(false);
 
@@ -27,11 +27,12 @@ const Item = ({ title, price, img }) => {
       <ItemDescription active={active} toggle={toggle}>
         <div className="description-item">
            <div className="item-img">
-              <img src='https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg'/>
+              <img src={img}/>
            </div> 
            <div className="item-text">
-              <span>BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats</span>
-              <span>$USD 56.99</span>
+              <span>{title}</span>
+              <span>{description}</span>
+              <span>${price}</span>
               <span>Envio Gratis <i class="fas fa-truck"></i></span>
               <button className="btn-buy">Comprar</button>
               <ItemCount/>

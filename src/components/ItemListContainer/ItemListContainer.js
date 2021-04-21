@@ -1,9 +1,8 @@
-import React, { Fragment, useEffect, useState } from "react";
-import "./ItmeListContainer.css";
+import React, { useEffect, useState } from "react";
+import "./ItemListContainer.css";
 import ItemList from "../ItemList/ItemList";
-import { render } from "@testing-library/react";
 
-const ItmeListContainer = () => {
+const ItemListContainer = () => {
 
     
 
@@ -15,7 +14,7 @@ const ItmeListContainer = () => {
     }, [])
 
     const obtenerUser = async () => {
-        const data = await fetch('https://fakestoreapi.com/products/category/women%20clothing');
+        const data = await fetch("https://fakestoreapi.com/products/category/women's%20clothing");
         const users = await data.json()
         setUser(users)
     }
@@ -28,4 +27,4 @@ const ItmeListContainer = () => {
 
 }
 
-export default ItmeListContainer;
+export default ItemListContainer;
