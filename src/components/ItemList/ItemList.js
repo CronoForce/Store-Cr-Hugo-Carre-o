@@ -6,7 +6,7 @@ const ItemList = ({ data }) => {
   return (
     <Fragment>
       <div className="title">
-        <h3>Productos</h3>
+        <h3>Lo Más Vendido</h3>
       </div>
       <div className="itemList">
         {data.map((data) => {

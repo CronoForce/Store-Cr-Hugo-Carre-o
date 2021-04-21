@@ -9,7 +9,6 @@ const ItemListContainer = () => {
     const [user, setUser] = useState([])
 
     useEffect(() => {
-        console.log('useEffect');
         obtenerUser()
     }, [])
 

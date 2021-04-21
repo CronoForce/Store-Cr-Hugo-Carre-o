@@ -19,7 +19,7 @@ class ItemDescription extends Component {
                     </div>
                 )}
             </Portal>
-        )
+        ) 
     }
 }
 
