@@ -25,7 +25,7 @@ function ItemCount() {
           +
         </button>
         <p className="car-cant" id="car-cant">
-          {numero}
+          {number}
         </p>
         <button onClick={less} className="btn-car-less">
           -
