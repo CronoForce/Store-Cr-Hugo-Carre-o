@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+.category{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.category h2{
+    width: 40%;
+    text-align: center;
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 2px solid #2c3e50;
+}
+.category-content{
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+.category-items{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.category-items img{
+    object-fit: contain;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+.category-items p{
+    text-transform: capitalize;
+    margin-left: -500%;
+    position: absolute;
+    font-size: 2.5rem;
+    transform: rotateZ(-30deg);
+    font-family: 'Dancing Script', cursive;
+    color: #fff;
+    transition: all .2s ease-in-out;
+}
+.category-items:hover p{
+    margin-left: 0;
+}
+.category-items:hover img{
+    filter: brightness(0.3);
+    transform: scale(1.4);
+}

@@ -1,0 +1,13 @@
+.jewerely{
+    width: 30%;
+    border-bottom: 2px solid #2c3e50;
+    margin: 30px auto;
+}
+.jewerely h2{
+    font-size: 2rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c3e50;
+}

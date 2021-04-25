@@ -1,27 +1,38 @@
-import React, { Fragment, useState } from "react";
-import Navbar from "./components/NavBar/NavBar";
-import "./App.css";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import Home from "./components/Home/Home";
-import Categorias from "./components/Categorias/Categorias";
-import Login from "./components/Login/Login";
-import Contacto from "./components/Contacto/Contacto";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import './App.css';
+import '@fortawesome/fontawesome-free/css/all.min.css'
+import Navbar from './componentes/Navbar/Navbar.jsx';
+import ItemContainer from './componentes/Body/ItemContainer/ItemContainer.jsx';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './componentes/Home/Home';
+import Login from './componentes/Login/login';
+import Contact from './componentes/Contact/Contact';
+import Category from './componentes/Categories/Category';
+import CartBuy from './componentes/CartWidget/CartBuy';
+import Electronics from './componentes/Categories/electronics/Electronics';
+import MenClothing from './componentes/Categories/menclothing/MenClothing';
+import WomenClothing from './componentes/Categories/womenclothing/WomenClothing';
+import Jewerely from './componentes/Categories/jewelery/Jewelery';
 
-function App() {
+
+const App = () => {
   return (
+    <div className="App">
     <Router>
-      <Fragment>
-        <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/categoria" component={Categorias} />
-          <Route path="/lomasvendido" component={ItemListContainer} />
-          <Route path="/contacto" component={Contacto} />
-          <Route path="/login" component={Login} />
-        </Switch>
-      </Fragment>
+      <Navbar />
+      <Switch>
+      <Route path='/' exact component={Home}/>
+        <Route path='/category' component={Category}/>
+        <Route path='/electronics' component={Electronics}/>
+        <Route path='/jewelery' component={Jewerely}/>
+        <Route path='/mensclothing' component={MenClothing}/>
+        <Route path='/womensclothing' component={WomenClothing}/>
+        <Route path='/hotShopping' component={ItemContainer}/>
+        <Route path='/cartBuy' component={CartBuy}/>
+        <Route path='/contact' component={Contact}/>
+        <Route path='/signIn' component={Login}/>
+      </Switch>
     </Router>
+    </div>
   );
 }
 

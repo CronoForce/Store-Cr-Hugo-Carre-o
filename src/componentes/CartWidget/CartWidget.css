@@ -1,0 +1,29 @@
+.car{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.car .circle-num{
+    background-color: #2ecc71;
+    position: absolute;
+    border-radius: 30px;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.car .circle-num .num-float{
+    position: absolute;
+    top: -24px;
+    left: 6px;
+    font-size: .7rem;
+    font-weight: 900;
+    color: #2c3e50;
+}
+
+.car i{
+    color: #fff;
+    font-size: 2rem;
+}
