@@ -50,6 +50,7 @@
     color: #2980b9;
     font-weight: 600;
     background-color: none;
+    cursor: pointer;
 
     transition: all .3s ease;
 }

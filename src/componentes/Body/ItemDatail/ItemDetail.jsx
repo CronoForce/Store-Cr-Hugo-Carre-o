@@ -3,11 +3,13 @@ import './ItemDetail.css'
 import Portal from '../../portal';
 
 class ItemDetail extends Component {
+    
     render() {
-
+ 
         const { children, toggle, active } = this.props;
 
         return (
+            
             <Portal>
                 {active && (
                     <div className="portal">

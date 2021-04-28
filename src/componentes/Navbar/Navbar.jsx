@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import './Navbar.css';
 import "materialize-css/dist/css/materialize.min.css";
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   constructor() {
@@ -30,7 +31,7 @@ class Navbar extends Component {
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {this.state.ItemsMenu.map((ele) => (
               <li>
-                <a href={ele.link} className="nav-links">{ele.navLinks}</a>
+                <Link to={ele.link} className="nav-links">{ele.navLinks}</Link>
               </li>
             ))}
           </ul>

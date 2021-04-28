@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./ItemCount.css";
+import { Link } from 'react-router-dom';
 
 function ItemCount() {
   const [number, setNumber] = useState(1);
@@ -15,25 +16,24 @@ function ItemCount() {
       setNumber(number - 1);
     }
 
-    
   };
 
   return (
     <div className="itemCount">
       <div className="itemCount-Container">
-        <button onClick={add} className="btn-car-add">
-          +
+        <button onClick={less} className="btn-car-add">
+          -
         </button>
         <p className="car-cant" id="car-cant">
           {number}
         </p>
-        <button onClick={less} className="btn-car-less">
-          -
+        <button onClick={add} className="btn-car-less">
+          +
         </button>
       </div>
-      <button href="" className="btn-add-car">
+      <Link to="/cartBuy" className="btn-add-car">
         Añadir al carrito
-      </button>
+      </Link>
     </div>
   );
 }
