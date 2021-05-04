@@ -6,11 +6,18 @@ import ItemDetail from '../ItemDatail/ItemDetail';
 const Item = ({ title, price, img, description}) => {
 
   const [active, setAtive] = useState(false);
+  const [cantidad, setCantidad] = useState(0);
 
   const toggle = () => {
     setAtive(!active);
   };
 
+  function onAdd (cantidadRecividad) {
+    setCantidad(cantidadRecividad);
+    alert('Agregado al Carrtio');
+  }
+  console.log(cantidad);
+  
   return (
     <Fragment>
       <a className="item" onClick={toggle}>
@@ -35,7 +42,7 @@ const Item = ({ title, price, img, description}) => {
               <span>${price}</span>
               <span>Free Shipping <i class="fas fa-truck"></i></span>
               <button className="btn-buy">Comprar</button>
-              <ItemCount/>
+              <ItemCount onAdd = {onAdd}/>
            </div>
         </div>
       </ItemDetail>

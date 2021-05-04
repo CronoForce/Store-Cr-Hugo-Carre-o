@@ -20,7 +20,7 @@ const ItemContainer = () => {
       <div className="itemContainer">
         <h2>Hot Shopping</h2>
       </div>
-      <ItemList data={product} />
+      <ItemList data = {product} />
     </Fragment>
   );
 };
